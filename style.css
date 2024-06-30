@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+    --color-primaria: #000000;
+    --color-secundaria: #F6F6F6;
+    --color-terciaria: #22D4FD;
+    --color-hover: #272727;
+
+    --fuente-krona: 'Krona One', sans-serif;
+    --fuente-montserrat: 'Montserrat', sans-serif;
+}
+
+* {
+     padding: 0;
+     margin:0; 
+}
+
+body { background-color:#000000;
+     color:#F6F6F6;
+     height:100vh;
+     box-sizing: border-box;
+
+}
+
+.header{
+    padding: 2% 0% 0% 15%;
+}
+
+.header__menu{
+    display: flex;
+    gap: 80px;
+}
+.header__menu__link{
+    font-family: var(--fuente-montserrat);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-terciaria);
+    text-decoration: none;
+}
+
+
+.titulo-destaque{ 
+     color:rgb(0, 162, 255);
+}
+
+.presentacion{
+     display: flex;
+     align-items: center;
+     margin:10%;
+     justify-content: space-between;
+     gap:40px;
+}
+
+.presntacion__contenido{
+    width: 50px ;
+    display:flex;
+    flex-direction: column;
+    gap:40px
+}
+
+.presentacion__contenido__titulo{
+    font-size: 36px;
+    font-family: "Krona One", sans-serif;
+}
+.presentacion__contenido_texto{
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.presentacion enlaces{
+    display:flex;
+    justify-content:space-between;
+}
+
+.presentacion__enlaces__subtitulo{
+    font-family: var(--fuente-krona);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+.presentacion__enlaces_link{
+    width:250px;
+    background-color: #22D4DF;
+    text-align: center;
+    padding:21.5px 0;
+    border-radius: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+    color:#000000
+}
+
+.presentacion__imagen{
+    width:50%;
+}
+
+.footer{
+    color:var(--color-primaria);
+    background-color: var(--color-terciaria);
+    padding: 24px;
+    text-align: center;
+    font-family: var(--fuente-krona);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+    
+    .header{
+         padding: 10%;  
+    }
+    .header__menu{
+        justify-content: center;
+    }
+    .presentacion{
+        flex-direction: column-reverse;
+        padding:5%;
+    }
+    .presntacion__contenido{
+        width: auto;
+    }
+}
